@@ -1,1 +1,1 @@
-SMART JOUNALING - El Coding
+SMART JOURNALING - El Coding
