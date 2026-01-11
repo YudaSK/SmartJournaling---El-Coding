@@ -1,26 +1,39 @@
 public class User {
     private String email;
-    private String displayName;
+    private String name;
     private String password;
 
     // Constructor
-    public User(String email, String displayName, String password) {
+    public User(String email, String name, String password) {
         this.email = email;
-        this.displayName = displayName;
+        this.name = name;
         this.password = password;
     }
 
-    // Getter methods (untuk mengambil data nanti saat Login)
+    // Getters
     public String getEmail() {
         return email;
     }
 
-    public String getDisplayName() {
-        return displayName;
+    public String getName() {
+        return name;
     }
 
     public String getPassword() {
         return password;
+    }
+
+    public String getDisplayName() {
+        return name;
+    }
+
+    // Setters
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setPassword(String password) {
@@ -29,6 +42,10 @@ public class User {
 
     @Override
     public String toString() {
-        return displayName + " (" + email + ")";
+        return "User{" +
+                "email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }
